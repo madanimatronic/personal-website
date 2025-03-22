@@ -1,40 +1,15 @@
-import { Geist, Geist_Mono } from 'next/font/google';
-import localFont from 'next/font/local';
+import { Alkalami, Press_Start_2P } from 'next/font/google';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const pressStart2PFont = Press_Start_2P({
+  variable: '--font-press-start-2p',
+  subsets: ['latin', 'cyrillic'],
+  weight: '400',
+});
+
+const alkalamiFont = Alkalami({
+  variable: '--font-alkalami',
   subsets: ['latin'],
+  weight: '400',
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
-const poppinsLocal = localFont({
-  src: [
-    {
-      path: '../../public/fonts/Poppins-Regular.ttf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/Poppins-Medium.ttf',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/Poppins-Italic.ttf',
-      weight: '400',
-      style: 'italic',
-    },
-    {
-      path: '../../public/fonts/Poppins-Bold.ttf',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-poppins',
-});
-
-export { geistMono, geistSans, poppinsLocal };
+export { alkalamiFont, pressStart2PFont };
