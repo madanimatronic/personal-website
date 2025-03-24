@@ -1,21 +1,25 @@
-import { Header } from '@/components/Header';
+import { MainFooter } from '@/components/MainFooter';
+import { MainHeader } from '@/components/MainHeader';
 import { FC, ReactNode } from 'react';
 import s from './MainLayout.module.scss';
 
 interface MainLayoutProps {
   children?: ReactNode;
+  mainElementClassName?: string;
 }
 
-// TODO: пересмотреть этот компонент
-
 // Основная разметка для страниц сайта
-export const MainLayout: FC<MainLayoutProps> = ({ children }) => {
+// (для страниц из портфолио могут использоваться другие разметки)
+export const MainLayout: FC<MainLayoutProps> = ({
+  children,
+  mainElementClassName,
+}) => {
   return (
     <>
       <div className={s.page}>
-        <Header title='testName' />
-        <main>{children}</main>
-        <footer>{'test footer Привет Мир!'}</footer>
+        <MainHeader title='testName' />
+        <main className={mainElementClassName}>{children}</main>
+        <MainFooter className={s.footer} />
       </div>
     </>
   );

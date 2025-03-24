@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.linksList {
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linkItem {
+}
+
+.link {
+  text-decoration: underline;
+}

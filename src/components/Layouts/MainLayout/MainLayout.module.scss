@@ -1,5 +1,13 @@
 @use '../../../styles/variables' as *;
 
 .page {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  min-height: 100svh;
   line-height: 1.2;
+}
+
+.footer {
+  margin-top: auto;
 }

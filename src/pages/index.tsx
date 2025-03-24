@@ -1,6 +1,6 @@
 import { MainLayout } from '@/components/Layouts/MainLayout';
 import { Seo } from '@/components/Seo';
-// import { geistMono, geistSans } from '@/styles/fonts';
+// import s from '@/styles/Home.module.scss';
 
 // TODO: при встраивании knucklebones не забыть поменять favicon,
 // description и title в Seo (также проверить всё это и на других страницах)
@@ -14,7 +14,7 @@ export default function Home() {
         iconLink='/favicon.ico'
       />
       <MainLayout>
-        <div style={{ background: 'wheat' }}>hello there!</div>
+        <div style={{ background: 'rgb(80, 80, 80)' }}>hello there!</div>
       </MainLayout>
     </>
   );
