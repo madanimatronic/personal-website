@@ -17,7 +17,7 @@ export const MainHeader: FC<MainHeaderProps> = ({
 }) => {
   return (
     <header className={clsx(s.header, additionalClassName)}>
-      <Link href='/' aria-label={title} className={s.title}>
+      <Link href='/' className={s.title}>
         {title}
       </Link>
       <ul className={s.linksList}>
