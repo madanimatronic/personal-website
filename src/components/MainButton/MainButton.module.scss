@@ -1,0 +1,16 @@
+.button {
+  font: inherit;
+  color: inherit;
+  background-color: black;
+  border: 2px solid #d10404;
+  box-shadow: -5px 5px #d10404;
+  padding: 18px 28px;
+  // transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: none;
+    background-color: #d10404;
+    color: black;
+  }
+}
