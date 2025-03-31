@@ -1,7 +1,15 @@
+.main {
+  margin-bottom: 240px;
+}
+
 .buttonsContainer {
   display: flex;
   column-gap: 300px;
   justify-content: center;
-  padding: 550px 0;
+  margin: 550px 0;
   align-content: center;
+
+  .button {
+    width: 12em;
+  }
 }

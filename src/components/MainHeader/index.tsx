@@ -20,23 +20,25 @@ export const MainHeader: FC<MainHeaderProps> = ({
       <Link href='/' className={s.title}>
         {title}
       </Link>
-      <ul className={s.linksList}>
-        <li className={s.linkItem}>
-          <Link className={s.link} href={'/'}>
-            Обо мне
-          </Link>
-        </li>
-        <li className={s.linkItem}>
-          <Link className={s.link} href={'/'}>
-            Ссылки
-          </Link>
-        </li>
-        <li className={s.linkItem}>
-          <Link className={s.link} href={'/'}>
-            Контакты
-          </Link>
-        </li>
-      </ul>
+      <nav className={s.navigation}>
+        <ul className={s.linksList}>
+          <li className={s.linkItem}>
+            <Link className={s.link} href={'/'}>
+              Обо мне
+            </Link>
+          </li>
+          <li className={s.linkItem}>
+            <Link className={s.link} href={'/'}>
+              Ссылки
+            </Link>
+          </li>
+          <li className={s.linkItem}>
+            <Link className={s.link} href={'/'}>
+              Контакты
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };

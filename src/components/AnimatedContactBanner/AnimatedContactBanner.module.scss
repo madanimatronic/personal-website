@@ -1,0 +1,43 @@
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 45px;
+  // row-gap: 1.875em;
+}
+
+.title {
+  background: linear-gradient(to right, #da781d, #e79f38);
+  // Альтернативный вариант:
+  // background: linear-gradient(to right, #da781d, #e79f38, #da781d);
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0.1em 0.1em #862222);
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  background: linear-gradient(to bottom, transparent 50%, #000000),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(255, 255, 255, 0.05) 0.5%,
+      transparent 1.5%
+    );
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 58px 0;
+}
+
+.link {
+  font-size: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.image {
+}
