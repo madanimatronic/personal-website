@@ -23,7 +23,7 @@ export const MainHeader: FC<MainHeaderProps> = ({
       <nav className={s.navigation}>
         <ul className={s.linksList}>
           <li className={s.linkItem}>
-            <Link className={s.link} href={'/'}>
+            <Link className={s.link} href={'/about'}>
               Обо мне
             </Link>
           </li>

@@ -17,11 +17,11 @@ import s from '@/styles/Home.module.scss';
 // TODO: поменять в теге <html> lang с en на ru и убедиться, что так на всех страницах
 // (хотя на сайте есть как ru текст, так и en, поэтому лучше поресерчить этот момент)
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Seo
-        headTitle='My page'
+        headTitle='Home page'
         metaDescription='some description'
         iconLink='/favicon.ico'
       />

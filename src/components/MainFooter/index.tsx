@@ -14,7 +14,7 @@ export const MainFooter: FC<MainFooterProps> = ({
     <footer className={clsx(s.footer, additionalClassName)}>
       <ul className={s.linksList}>
         <li className={s.linkItem}>
-          <Link className={s.link} href={'/'}>
+          <Link className={s.link} href={'/about'}>
             Обо мне
           </Link>
         </li>
