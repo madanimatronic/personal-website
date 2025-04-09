@@ -7,6 +7,10 @@ interface MainButtonProps {
   children?: ReactNode;
 }
 
+// TODO: учитывая, что кнопки на сайте в основном используются как ссылки, нужно будет использовать вместо button <a>
+// (но стоит ещё помнить про tabIndex и взаимодействие через enter как у обычной кнопки)
+// также сам компонент скорее всего надо будет назвать ButtonLink или вроде того
+
 export const MainButton: FC<MainButtonProps> = ({
   className: additionalClassName,
   children,

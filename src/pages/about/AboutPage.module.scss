@@ -9,6 +9,44 @@
   font-size: 1.5em;
 }
 
+.greeting {
+  display: inline-block;
+  margin-bottom: 1.2em;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2em;
+}
+
 .paragraphText {
   line-height: 1.6;
+}
+
+.textLink {
+  text-decoration: underline;
+
+  &:hover {
+    color: #7dcdd7;
+  }
+}
+
+.lightGreenAccent {
+  color: #2aff66;
+}
+.grayAccent {
+  color: #8f8f8f;
+}
+.blueAccent {
+  color: #2374ff;
+}
+.lightGrayAccent {
+  color: #cccccc;
+}
+.purpleAccent {
+  color: #7e4fd5;
+}
+.darkGreenAccent {
+  color: #17ca29;
 }

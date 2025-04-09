@@ -1,6 +1,7 @@
 import { MainLayout } from '@/components/Layouts/MainLayout';
 import { MainContentBlock } from '@/components/MainContentBlock';
 import { Seo } from '@/components/Seo';
+import { procharityURL } from '@/utils/constants';
 import s from './AboutPage.module.scss';
 
 export default function AboutPage() {
@@ -13,13 +14,33 @@ export default function AboutPage() {
       />
       <MainLayout mainElementClassName={s.main}>
         <h1 className={s.intro}>
-          Привет! <br />
-          <br />
+          <span className={s.greeting}>Привет!</span> <br />
           Меня зовут testName <br /> Я начинающий frontend-разработчик,
           стремящийся к новым знаниям и навыкам.
         </h1>
         <MainContentBlock title='Опыт'>
-          <p className={s.paragraphText}>Тут какое-то описание...</p>
+          <div className={s.textContainer}>
+            <p className={s.paragraphText}>
+              На данный момент у меня не так много опыта frontend-разработки, но
+              я уже успел поработать над проектами яндекс-практикума, включая
+              участие в реальном проекте{' '}
+              <a className={s.textLink} target='_blank' href={procharityURL}>
+                ProCharity
+              </a>
+            </p>
+            <p className={s.paragraphText}>
+              Также завершил несколько собственных pet-проектов и участвовал в
+              небольшом стартапе в роли fullstack-разработчика, где приобрёл
+              массу ценных занний и получил опыт работы с{' '}
+              <span className={s.lightGreenAccent}>NodeJS</span>,{' '}
+              <span className={s.grayAccent}>Express.js</span>,{' '}
+              <span className={s.blueAccent}>PostgreSQL</span>,{' '}
+              <span className={s.lightGrayAccent}>NextJS</span>,{' '}
+              <span className={s.purpleAccent}>Lightweight Charts</span>,{' '}
+              <span className={s.darkGreenAccent}>Zustand</span> и прочими
+              инструментами.
+            </p>
+          </div>
         </MainContentBlock>
       </MainLayout>
     </>
