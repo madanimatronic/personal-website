@@ -14,6 +14,7 @@ export const MainContentBlock: FC<MainContentBlockProps> = ({
   className: additionalClassName,
 }) => {
   return (
+    // TODO: Возможно тут лучше подойдёт <section>, перепроверить
     <div className={clsx(s.contentBlock, additionalClassName)}>
       <h2 className={s.title}>{title}</h2>
       {children}

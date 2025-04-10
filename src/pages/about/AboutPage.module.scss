@@ -20,13 +20,19 @@
   row-gap: 1.2em;
 }
 
-.paragraphText {
+.contentBlockText {
   line-height: 1.6;
 }
 
 .textLink {
   text-decoration: underline;
 
+  &:hover {
+    color: #b8b8b8;
+  }
+}
+
+.procharityLink {
   &:hover {
     color: #7dcdd7;
   }

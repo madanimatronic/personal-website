@@ -31,7 +31,7 @@ export default function HomePage() {
         <div className={s.buttonsContainer}>
           <MainButton className={s.button}>Портфолио</MainButton>
           <MainButton className={s.button}>Стек</MainButton>
-          <MainButton className={s.button}>Принципы</MainButton>
+          {/* <MainButton className={s.button}>Принципы</MainButton> */}
         </div>
         <AnimatedContactBanner />
       </MainLayout>

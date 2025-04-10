@@ -2,7 +2,10 @@ import { MainLayout } from '@/components/Layouts/MainLayout';
 import { MainContentBlock } from '@/components/MainContentBlock';
 import { Seo } from '@/components/Seo';
 import { procharityURL } from '@/utils/constants';
+import clsx from 'clsx';
 import s from './AboutPage.module.scss';
+
+// TODO: секции (упорядоченный список) стек, требования к работе (лучше написать пожелания или предпочтения), "хотите связаться?", обо мне
 
 export default function AboutPage() {
   return (
@@ -20,15 +23,19 @@ export default function AboutPage() {
         </h1>
         <MainContentBlock title='Опыт'>
           <div className={s.textContainer}>
-            <p className={s.paragraphText}>
+            <p className={s.contentBlockText}>
               На данный момент у меня не так много опыта frontend-разработки, но
               я уже успел поработать над проектами яндекс-практикума, включая
               участие в реальном проекте{' '}
-              <a className={s.textLink} target='_blank' href={procharityURL}>
+              <a
+                className={clsx(s.textLink, s.procharityLink)}
+                target='_blank'
+                href={procharityURL}
+              >
                 ProCharity
               </a>
             </p>
-            <p className={s.paragraphText}>
+            <p className={s.contentBlockText}>
               Также завершил несколько собственных pet-проектов и участвовал в
               небольшом стартапе в роли fullstack-разработчика, где приобрёл
               массу ценных занний и получил опыт работы с{' '}
@@ -42,6 +49,7 @@ export default function AboutPage() {
             </p>
           </div>
         </MainContentBlock>
+        <MainContentBlock title='Стек'></MainContentBlock>
       </MainLayout>
     </>
   );
