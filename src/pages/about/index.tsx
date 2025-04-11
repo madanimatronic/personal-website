@@ -39,17 +39,66 @@ export default function AboutPage() {
               Также завершил несколько собственных pet-проектов и участвовал в
               небольшом стартапе в роли fullstack-разработчика, где приобрёл
               массу ценных занний и получил опыт работы с{' '}
-              <span className={s.lightGreenAccent}>NodeJS</span>,{' '}
-              <span className={s.grayAccent}>Express.js</span>,{' '}
-              <span className={s.blueAccent}>PostgreSQL</span>,{' '}
-              <span className={s.lightGrayAccent}>NextJS</span>,{' '}
-              <span className={s.purpleAccent}>Lightweight Charts</span>,{' '}
-              <span className={s.darkGreenAccent}>Zustand</span> и прочими
+              <span className={s.nodeAccent}>NodeJS</span>,{' '}
+              <span className={s.expressAccent}>Express.js</span>,{' '}
+              <span className={s.postgreSQLAccent}>PostgreSQL</span>,{' '}
+              <span className={s.nextAccent}>NextJS</span>,{' '}
+              <span className={s.lwcAccent}>Lightweight Charts</span>,{' '}
+              <span className={s.zustandAccent}>Zustand</span> и прочими
               инструментами.
             </p>
           </div>
         </MainContentBlock>
-        <MainContentBlock title='Стек'></MainContentBlock>
+        <MainContentBlock title='Стек'>
+          <ul className={s.stackList}>
+            <li className={clsx(s.stackItem, s.html)}>HTML</li>
+            <li className={clsx(s.stackItem, s.css)}>CSS</li>
+            <li className={clsx(s.stackItem, s.js)}>JavaScript</li>
+            <li className={clsx(s.stackItem, s.ts)}>TypeScript</li>
+            <li className={clsx(s.stackItem, s.sass)}>SASS/SCSS</li>
+            <li className={clsx(s.stackItem, s.react)}>React</li>
+            <li className={clsx(s.stackItem, s.redux)}>Redux</li>
+            <li className={clsx(s.stackItem, s.zustand)}>Zustand</li>
+            <li className={clsx(s.stackItem, s.storybook)}>Storybook</li>
+            <li className={clsx(s.stackItem, s.webpack)}>Webpack</li>
+            <li className={clsx(s.stackItem, s.vite)}>Vite</li>
+            <li className={clsx(s.stackItem, s.next)}>Next.JS</li>
+            <li className={clsx(s.stackItem, s.mui)}>MUI</li>
+            <li className={clsx(s.stackItem, s.pixi)}>Pixi.js</li>
+            <li className={clsx(s.stackItem, s.lwc)}>Lightweight Charts</li>
+            <li className={clsx(s.stackItem, s.express)}>Express.js</li>
+            <li className={clsx(s.stackItem, s.node)}>Node.js</li>
+            <li className={clsx(s.stackItem, s.reactRouter)}>React Router</li>
+            <li className={clsx(s.stackItem, s.git)}>Git</li>
+            <li className={clsx(s.stackItem, s.postgreSQL)}>PostgreSQL</li>
+            <li className={clsx(s.stackItem, s.restAPI)}>REST API</li>
+            <li className={clsx(s.stackItem, s.jest)}>Jest</li>
+            <li className={clsx(s.stackItem, s.rtl)}>React Testing Library</li>
+            <li className={clsx(s.stackItem, s.cypress)}>Cypress</li>
+          </ul>
+        </MainContentBlock>
+        <MainContentBlock title='Предпочтения'>
+          <ol className={s.preferencesList}>
+            <li className={clsx(s.preferenceItem, s.contentBlockText)}>
+              <div className={s.preferenceContainer}>
+                <span className={s.preferenceText}>Something...</span>
+                <small className={s.preferenceNote}>some info</small>
+              </div>
+            </li>
+            <li className={clsx(s.preferenceItem, s.contentBlockText)}>
+              <div className={s.preferenceContainer}>
+                <span className={s.preferenceText}>Something...</span>
+                <small className={s.preferenceNote}>some info</small>
+              </div>
+            </li>
+            <li className={clsx(s.preferenceItem, s.contentBlockText)}>
+              <div className={s.preferenceContainer}>
+                <span className={s.preferenceText}>Something...</span>
+                <small className={s.preferenceNote}>some info</small>
+              </div>
+            </li>
+          </ol>
+        </MainContentBlock>
       </MainLayout>
     </>
   );

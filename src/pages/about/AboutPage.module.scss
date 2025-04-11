@@ -38,21 +38,186 @@
   }
 }
 
-.lightGreenAccent {
-  color: #2aff66;
+.nodeAccent {
+  color: #6ebc4d;
 }
-.grayAccent {
-  color: #8f8f8f;
+.expressAccent {
+  color: #b4b4b4;
 }
-.blueAccent {
-  color: #2374ff;
+.postgreSQLAccent {
+  color: #336791;
 }
-.lightGrayAccent {
+.nextAccent {
   color: #cccccc;
 }
-.purpleAccent {
-  color: #7e4fd5;
+.lwcAccent {
+  color: #a02ad8;
 }
-.darkGreenAccent {
-  color: #17ca29;
+.zustandAccent {
+  color: #ef941d;
+}
+
+.stackList {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 30px;
+}
+
+.stackItem {
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.7em 0.87em;
+  line-height: 1;
+
+  &.html {
+    color: #dd4b25;
+    background-color: rgba(221, 75, 37, 0.1);
+  }
+
+  &.css {
+    color: rebeccapurple;
+    background-color: rgba(102, 51, 153, 0.1);
+  }
+
+  &.js {
+    color: #efd81d;
+    background-color: rgba(239, 216, 29, 0.1);
+  }
+
+  &.ts {
+    color: #1d51ef;
+    background-color: rgba(29, 81, 239, 0.1);
+  }
+
+  &.sass {
+    color: #c66394;
+    background-color: rgba(198, 99, 148, 0.1);
+  }
+
+  &.react {
+    color: #61dafb;
+    background-color: rgba(97, 218, 251, 0.1);
+  }
+
+  &.redux {
+    color: #764abc;
+    background-color: rgba(118, 74, 188, 0.1);
+  }
+
+  &.zustand {
+    color: #ef941d;
+    background-color: rgba(239, 148, 29, 0.1);
+  }
+
+  &.storybook {
+    color: #ff4785;
+    background-color: rgba(255, 71, 132, 0.1);
+  }
+
+  &.webpack {
+    color: #1c78c0;
+    background-color: rgba(28, 121, 192, 0.1);
+  }
+
+  &.vite {
+    color: #9721ff;
+    background-color: rgba(151, 33, 255, 0.1);
+  }
+
+  &.next {
+    color: #cccccc;
+    background-color: rgba(204, 204, 204, 0.1);
+  }
+
+  &.mui {
+    color: #047dff;
+    background-color: rgba(4, 125, 255, 0.1);
+  }
+
+  &.pixi {
+    color: #e72264;
+    background-color: rgba(231, 34, 100, 0.1);
+  }
+
+  &.lwc {
+    color: #a02ad8;
+    background-color: rgba(161, 42, 216, 0.1);
+  }
+
+  &.express {
+    color: #b4b4b4;
+    background-color: rgba(180, 180, 180, 0.1);
+  }
+
+  &.node {
+    color: #6ebc4d;
+    background-color: rgba(110, 188, 77, 0.1);
+  }
+
+  &.reactRouter {
+    color: #f94949;
+    background-color: rgba(249, 73, 73, 0.1);
+  }
+
+  &.git {
+    color: #dcdcdc;
+    background-color: rgba(220, 220, 220, 0.1);
+  }
+
+  &.postgreSQL {
+    color: #336791;
+    background-color: rgba(51, 103, 145, 0.1);
+  }
+
+  &.restAPI {
+    color: #a6ceff;
+    background-color: rgba(166, 206, 255, 0.1);
+  }
+
+  &.jest {
+    color: #944058;
+    background-color: rgba(148, 64, 88, 0.1);
+  }
+
+  &.rtl {
+    color: #ea1b28;
+    background-color: rgba(234, 27, 41, 0.1);
+  }
+
+  &.cypress {
+    color: #26e99c;
+    background-color: rgba(38, 233, 155, 0.1);
+  }
+}
+
+.preferencesList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  list-style-position: inside;
+  .preferenceItem::marker {
+    content: counter(list-item) ') ';
+  }
+}
+
+.preferenceItem {
+  // Альтернативный вариант с подчёркиванием счётчика списка
+  // text-decoration: underline;
+}
+
+.preferenceContainer {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.preferenceText {
+  text-decoration: underline;
+}
+
+.preferenceNote {
+  display: block;
+  font-size: 0.75em;
 }
