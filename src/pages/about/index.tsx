@@ -1,4 +1,5 @@
 import { MainLayout } from '@/components/Layouts/MainLayout';
+import { MainButton } from '@/components/MainButton';
 import { MainContentBlock } from '@/components/MainContentBlock';
 import { Seo } from '@/components/Seo';
 import { procharityURL } from '@/utils/constants';
@@ -76,28 +77,45 @@ export default function AboutPage() {
             <li className={clsx(s.stackItem, s.rtl)}>React Testing Library</li>
             <li className={clsx(s.stackItem, s.cypress)}>Cypress</li>
           </ul>
+          <small className={clsx(s.noteText, s.stackNote)}>
+            * Данный список может быть неполным. Также я готов изучить что-то
+            новое
+          </small>
         </MainContentBlock>
         <MainContentBlock title='Предпочтения'>
           <ol className={s.preferencesList}>
             <li className={clsx(s.preferenceItem, s.contentBlockText)}>
               <div className={s.preferenceContainer}>
-                <span className={s.preferenceText}>Something...</span>
-                <small className={s.preferenceNote}>some info</small>
+                <span className={s.preferenceText}>
+                  График работы: удалённая работа
+                </span>
+                <small className={s.noteText}>
+                  Я предпочитаю работать удалённо, но могу иногда приезжать в
+                  офис при необходимости
+                </small>
               </div>
             </li>
             <li className={clsx(s.preferenceItem, s.contentBlockText)}>
               <div className={s.preferenceContainer}>
-                <span className={s.preferenceText}>Something...</span>
-                <small className={s.preferenceNote}>some info</small>
+                <span className={s.preferenceText}>
+                  Тип занятости: полная или частичная занятость
+                </span>
               </div>
             </li>
             <li className={clsx(s.preferenceItem, s.contentBlockText)}>
               <div className={s.preferenceContainer}>
-                <span className={s.preferenceText}>Something...</span>
-                <small className={s.preferenceNote}>some info</small>
+                <span className={s.preferenceText}>
+                  {'Желаемая зарплата: от 45.000р или 300р/час'}
+                </span>
+                <small className={s.noteText}>
+                  Я готов рассмотреть разные предложения
+                </small>
               </div>
             </li>
           </ol>
+        </MainContentBlock>
+        <MainContentBlock title='Хотите связаться?'>
+          <MainButton>Мои контакты</MainButton>
         </MainContentBlock>
       </MainLayout>
     </>

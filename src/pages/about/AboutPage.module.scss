@@ -192,6 +192,15 @@
   }
 }
 
+.noteText {
+  display: block;
+  font-size: 0.75em;
+}
+
+.stackNote {
+  margin-top: 40px;
+}
+
 .preferencesList {
   display: flex;
   flex-direction: column;
@@ -205,19 +214,16 @@
 .preferenceItem {
   // Альтернативный вариант с подчёркиванием счётчика списка
   // text-decoration: underline;
+  white-space: preserve nowrap;
 }
 
 .preferenceContainer {
   display: inline-flex;
   flex-direction: column;
   row-gap: 15px;
+  white-space: normal;
 }
 
 .preferenceText {
   text-decoration: underline;
-}
-
-.preferenceNote {
-  display: block;
-  font-size: 0.75em;
 }
