@@ -1,0 +1,39 @@
+.main {
+  margin-top: auto;
+  padding: 0 130px;
+}
+
+.linksList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6em;
+  row-gap: 2.7em;
+
+  // Нечётные дочерние элементы
+  & > :nth-child(odd) {
+    justify-self: flex-end;
+  }
+
+  // Чётные дочерние элементы
+  // & > :nth-child(even) {
+  //   justify-self: flex-start;
+  // }
+
+  & > :nth-child(even) > .linkButton {
+    align-self: flex-start;
+    box-shadow: 5px 5px #d10404;
+
+    &:hover {
+      box-shadow: 5px 5px #830707;
+    }
+  }
+}
+
+.linkItem {
+}
+
+.linkButton {
+  font-size: 1.5em;
+  padding: 1.25em 0;
+  width: 21.1em;
+}

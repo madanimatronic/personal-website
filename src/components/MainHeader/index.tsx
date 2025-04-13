@@ -28,12 +28,12 @@ export const MainHeader: FC<MainHeaderProps> = ({
             </Link>
           </li>
           <li className={s.linkItem}>
-            <Link className={s.link} href={'/'}>
+            <Link className={s.link} href={'/links'}>
               Ссылки
             </Link>
           </li>
           <li className={s.linkItem}>
-            <Link className={s.link} href={'/'}>
+            <Link className={s.link} href={'/contacts'}>
               Контакты
             </Link>
           </li>

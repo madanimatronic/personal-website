@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  column-gap: 6em;
+  padding: 0 130px;
+}
+
+.linksList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2.7em;
+}
+
+.linkItem {
+}
+
+.linkButton {
+  font-size: 1.5em;
+  padding: 1.25em 0;
+  width: 21.1em;
+}
+
+.mailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2.1em;
+  align-self: center;
+  padding: 2em;
+  border: 2px solid;
+  text-align: center;
+  font-style: normal;
+}
+
+.mailTitle {
+  font-size: 1.5em;
+}
+
+.mail {
+  text-decoration: underline;
+
+  &:hover {
+    color: rgb(170, 170, 170);
+    // color: #d10404;
+  }
+}
