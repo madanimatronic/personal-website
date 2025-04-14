@@ -2,7 +2,7 @@ import { MainLayout } from '@/components/Layouts/MainLayout';
 import { MainButton } from '@/components/MainButton';
 import { Seo } from '@/components/Seo';
 import { myWorkMail } from '@/utils/constants';
-import s from './Contacts.module.scss';
+import s from './ContactsPage.module.scss';
 
 export default function ContactsPage() {
   return (

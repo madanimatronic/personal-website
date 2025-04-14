@@ -1,0 +1,36 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as mixins;
+
+.dice {
+  --dice-size: 80px;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: var(--dice-size);
+  height: var(--dice-size);
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d6d5c9;
+
+  @include mixins.responsive('lg') {
+    --dice-size: 70px;
+  }
+
+  @include mixins.responsive('sm') {
+    --dice-size: 60px;
+  }
+
+  @include mixins.responsive('lg-height') {
+    --dice-size: 60px;
+  }
+}
+
+.dot {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  background-color: #2b2b2b;
+}

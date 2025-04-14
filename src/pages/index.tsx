@@ -3,7 +3,7 @@ import { MainLayout } from '@/components/Layouts/MainLayout';
 import { MainButton } from '@/components/MainButton';
 import { Seo } from '@/components/Seo';
 import { TerminalHero } from '@/components/TerminalHero';
-import s from '@/styles/Home.module.scss';
+import s from '@/styles/HomePage.module.scss';
 
 // TODO: при встраивании knucklebones не забыть поменять favicon,
 // description и title в Seo (также проверить всё это и на других страницах)

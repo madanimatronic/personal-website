@@ -1,0 +1,73 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as mixins;
+
+.playerWidgets {
+  --box-shadow-offset: 20px;
+  --border-size: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 310px;
+  max-height: 315px;
+  width: 100%;
+  height: 100%;
+
+  @include mixins.responsive('lg') {
+    --border-size: 15px;
+  }
+
+  @include mixins.responsive('sm') {
+    --border-size: 10px;
+  }
+}
+
+.stats {
+  text-align: center;
+  // Для выравнивания шрифта
+  padding-top: 18px;
+
+  @include mixins.responsive('lg') {
+    padding-top: 16px;
+  }
+
+  @include mixins.responsive('md') {
+    padding-top: 12px;
+  }
+
+  @include mixins.responsive('lg-height') {
+    padding-top: 12px;
+  }
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--board-main-color, #5e5e5e);
+  max-height: 190px;
+  height: 100%;
+  align-self: stretch;
+  border: var(--border-size) solid var(--board-border-color, #8a8a8a);
+  box-shadow: 0px var(--box-shadow-offset) var(--board-shadow-color, #5b5b5b);
+  margin-bottom: var(--box-shadow-offset);
+
+  @include mixins.responsive('sm') {
+    height: auto;
+  }
+}
+
+.mainPlayer {
+  --board-main-color: #74150c;
+  --board-border-color: #cc1b06;
+  --board-shadow-color: #6d140c;
+}
+
+.reversed {
+  flex-direction: column-reverse;
+}
+
+.hidden {
+  visibility: hidden;
+}

@@ -1,7 +1,7 @@
 import { MainLayout } from '@/components/Layouts/MainLayout';
 import { MainButton } from '@/components/MainButton';
 import { Seo } from '@/components/Seo';
-import s from './Links.module.scss';
+import s from './LinksPage.module.scss';
 
 export default function LinksPage() {
   return (
