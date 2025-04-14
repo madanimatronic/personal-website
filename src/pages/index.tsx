@@ -1,6 +1,6 @@
 import { AnimatedContactBanner } from '@/components/AnimatedContactBanner';
 import { MainLayout } from '@/components/Layouts/MainLayout';
-import { MainButton } from '@/components/MainButton';
+import { MainButtonLink } from '@/components/MainButtonLink';
 import { Seo } from '@/components/Seo';
 import { TerminalHero } from '@/components/TerminalHero';
 import s from '@/styles/HomePage.module.scss';
@@ -29,9 +29,9 @@ export default function HomePage() {
         <TerminalHero />
         {/* <div style={{ background: 'rgb(80, 80, 80)' }}>hello there!</div> */}
         <div className={s.buttonsContainer}>
-          <MainButton className={s.button}>Портфолио</MainButton>
-          <MainButton className={s.button}>Стек</MainButton>
-          <MainButton className={s.button}>Предпочтения</MainButton>
+          <MainButtonLink className={s.button}>Портфолио</MainButtonLink>
+          <MainButtonLink className={s.button}>Стек</MainButtonLink>
+          <MainButtonLink className={s.button}>Предпочтения</MainButtonLink>
         </div>
         <AnimatedContactBanner />
       </MainLayout>

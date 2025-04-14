@@ -1,5 +1,5 @@
 import { MainLayout } from '@/components/Layouts/MainLayout';
-import { MainButton } from '@/components/MainButton';
+import { MainButtonLink } from '@/components/MainButtonLink';
 import { Seo } from '@/components/Seo';
 import { myWorkMail } from '@/utils/constants';
 import s from './ContactsPage.module.scss';
@@ -15,7 +15,9 @@ export default function ContactsPage() {
       <MainLayout mainElementClassName={s.main}>
         <ul className={s.linksList}>
           <li className={s.linkItem}>
-            <MainButton className={s.linkButton}>Я на HeadHunter</MainButton>
+            <MainButtonLink className={s.buttonLink}>
+              Я на HeadHunter
+            </MainButtonLink>
           </li>
         </ul>
         <address className={s.mailContainer}>

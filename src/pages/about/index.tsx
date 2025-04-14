@@ -1,5 +1,5 @@
 import { MainLayout } from '@/components/Layouts/MainLayout';
-import { MainButton } from '@/components/MainButton';
+import { MainButtonLink } from '@/components/MainButtonLink';
 import { MainContentBlock } from '@/components/MainContentBlock';
 import { Seo } from '@/components/Seo';
 import { procharityURL } from '@/utils/constants';
@@ -31,6 +31,7 @@ export default function AboutPage() {
               <a
                 className={clsx(s.textLink, s.procharityLink)}
                 target='_blank'
+                rel='noopener noreferrer'
                 href={procharityURL}
               >
                 ProCharity
@@ -115,7 +116,7 @@ export default function AboutPage() {
           </ol>
         </MainContentBlock>
         <MainContentBlock title='Хотите связаться?'>
-          <MainButton>Мои контакты</MainButton>
+          <MainButtonLink>Мои контакты</MainButtonLink>
         </MainContentBlock>
       </MainLayout>
     </>

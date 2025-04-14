@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import { FC, ReactNode } from 'react';
-import s from './MainButton.module.scss';
+import s from './MainButtonLink.module.scss';
 
-interface MainButtonProps {
+interface MainButtonLinkProps {
   className?: string;
   children?: ReactNode;
 }
@@ -10,7 +10,7 @@ interface MainButtonProps {
 // TODO: учитывая, что кнопки на сайте в основном используются как ссылки, нужно будет использовать вместо button <a>
 // также сам компонент скорее всего надо будет назвать ButtonLink или вроде того
 
-export const MainButton: FC<MainButtonProps> = ({
+export const MainButtonLink: FC<MainButtonLinkProps> = ({
   className: additionalClassName,
   children,
 }) => {

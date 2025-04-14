@@ -1,5 +1,5 @@
-import { PlayerField } from '@/components/knucklebones/PlayerField';
-import { PlayerWidgets } from '@/components/knucklebones/PlayerWidgets';
+import { PlayerField } from '@/components/Knucklebones/PlayerField';
+import { PlayerWidgets } from '@/components/Knucklebones/PlayerWidgets';
 import { Seo } from '@/components/Seo';
 import { Game } from '@/game/entities/Game';
 import { IPlayer, Player } from '@/game/entities/Player';
