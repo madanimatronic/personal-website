@@ -116,7 +116,7 @@ export default function AboutPage() {
           </ol>
         </MainContentBlock>
         <MainContentBlock title='Хотите связаться?'>
-          <MainButtonLink>Мои контакты</MainButtonLink>
+          <MainButtonLink href='/contacts'>Мои контакты</MainButtonLink>
         </MainContentBlock>
       </MainLayout>
     </>

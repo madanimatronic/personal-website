@@ -1,4 +1,6 @@
-.button {
+.buttonLink {
+  display: block;
+  width: fit-content;
   font: inherit;
   color: inherit;
   background-color: #000000;
@@ -8,6 +10,7 @@
   padding: 0.75em 1.167em;
   // transition: box-shadow 0.2s ease-in-out;
   cursor: pointer;
+  text-align: center;
 
   &:hover {
     // box-shadow: none;

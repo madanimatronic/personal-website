@@ -15,7 +15,7 @@ export const AnimatedContactBanner: FC<AnimatedContactBannerProps> = ({
     <div className={clsx(s.bannerContainer, additionalClassName)}>
       <h2 className={s.title}>Хотите связаться?</h2>
       <div className={s.screen}>
-        <Link className={s.link} href={'/'}>
+        <Link className={s.link} href={'/contacts'}>
           <Image
             className={s.image}
             src={'/images/phone.webp'}

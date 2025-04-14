@@ -1,20 +1,46 @@
 import clsx from 'clsx';
-import { FC, ReactNode } from 'react';
+import Link from 'next/link';
+import { FC, HTMLAttributeAnchorTarget, ReactNode } from 'react';
 import s from './MainButtonLink.module.scss';
 
 interface MainButtonLinkProps {
   className?: string;
+  href?: string;
+  external?: boolean;
+  target?: HTMLAttributeAnchorTarget | undefined;
+  rel?: string;
   children?: ReactNode;
 }
 
-// TODO: учитывая, что кнопки на сайте в основном используются как ссылки, нужно будет использовать вместо button <a>
-// также сам компонент скорее всего надо будет назвать ButtonLink или вроде того
-
 export const MainButtonLink: FC<MainButtonLinkProps> = ({
   className: additionalClassName,
+  href = '/',
+  external = false,
+  target,
+  rel,
   children,
 }) => {
-  return (
-    <button className={clsx(s.button, additionalClassName)}>{children}</button>
-  );
+  if (external) {
+    return (
+      <a
+        className={clsx(s.buttonLink, additionalClassName)}
+        href={href}
+        target={target}
+        rel={rel}
+      >
+        {children}
+      </a>
+    );
+  } else {
+    return (
+      <Link
+        className={clsx(s.buttonLink, additionalClassName)}
+        href={href}
+        target={target}
+        rel={rel}
+      >
+        {children}
+      </Link>
+    );
+  }
 };
