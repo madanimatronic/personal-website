@@ -19,19 +19,10 @@ export const TerminalHero: FC<TerminalHeroProps> = ({
   return (
     <div className={clsx(s.hero, additionalClassName)}>
       <h1 className={s.message}>
-        {'>'}
-        {'I DO'} {/* Первый вариант выделения */}
-        <span className={s.accent}>FRONTEND</span>_
-        {/* Второй вариант выделения */}
-        {/* <span
-        style={{
-          backgroundColor: '#d10404',
-          color: 'black',
-        }}
-      >
-        FRONTEND
-      </span>
-      _ */}
+        <span className={clsx(s.animatedMessage, s.typewriterEffect)}>
+          {'I DO '}
+          <span className={s.accent}>FRONTEND</span>
+        </span>
       </h1>
     </div>
   );

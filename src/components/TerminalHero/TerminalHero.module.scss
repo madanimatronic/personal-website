@@ -4,24 +4,76 @@
 }
 
 .message {
+  display: inline-block;
+  position: relative;
   font-size: inherit;
+  left: 1em;
+
+  &::before {
+    position: absolute;
+    transform: translate(-100%);
+    content: '>';
+  }
+
+  &::after {
+    // Альтернативный вид каретки
+    // @extend .accent;
+    content: '_';
+    position: absolute;
+    transform: translate(10%, -0.05em);
+    bottom: 0;
+    animation: blink-caret 1s step-end infinite;
+  }
+}
+
+.animatedMessage {
+  display: inline-block;
 }
 
 .accent {
   // Вариант 1:
-  color: #00000063;
-  text-shadow: 0.05em 0.05em #d10404;
+  color: #800202;
+  // color: #00000063;
+  // text-shadow: 0.05em 0.05em #d10404;
   // Вариант 2:
   // text-shadow: 0.05em 0.05em rgb(209, 4, 199);
 
-  // animation: 0.3s ease-in-out 0s forwards animateShadow;
+  animation: 0.3s ease-in-out 1.1s forwards animateShadow;
 }
 
-// @keyframes animateShadow {
-//   0% {
-//     text-shadow: 0em 0em rgb(209, 4, 199);
-//   }
-//   100% {
-//     text-shadow: 0.05em 0.05em rgb(209, 4, 199);
-//   }
-// }
+.typewriterEffect {
+  overflow: hidden;
+  white-space: nowrap;
+  // Регулируемое
+  // letter-spacing: 0.15em;
+  animation: typing 1s steps(22, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateShadow {
+  0% {
+    text-shadow: 0em 0em #d10404;
+  }
+  100% {
+    color: #00000063;
+    text-shadow: 0.05em 0.05em #d10404;
+  }
+}
