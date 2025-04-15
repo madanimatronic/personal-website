@@ -22,7 +22,7 @@
     position: absolute;
     transform: translate(10%, -0.05em);
     bottom: 0;
-    animation: blink-caret 1s step-end infinite;
+    animation: blinkCaret 1s step-end infinite;
   }
 }
 
@@ -58,7 +58,7 @@
   }
 }
 
-@keyframes blink-caret {
+@keyframes blinkCaret {
   from,
   to {
     opacity: 1;
