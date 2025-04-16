@@ -4,6 +4,7 @@ import { MainButtonLink } from '@/components/MainButtonLink';
 import { Seo } from '@/components/Seo';
 import { TerminalHero } from '@/components/TerminalHero';
 import s from '@/styles/HomePage.module.scss';
+import { myGithubURL } from '@/utils/constants';
 
 // TODO: при встраивании knucklebones не забыть поменять favicon,
 // description и title в Seo (также проверить всё это и на других страницах)
@@ -27,9 +28,16 @@ export default function HomePage() {
       />
       <MainLayout mainElementClassName={s.main}>
         <TerminalHero />
-        {/* <div style={{ background: 'rgb(80, 80, 80)' }}>hello there!</div> */}
         <div className={s.buttonsContainer}>
-          <MainButtonLink className={s.button}>Портфолио</MainButtonLink>
+          <MainButtonLink
+            external
+            href={myGithubURL}
+            target='_blank'
+            rel='noopener noreferrer'
+            className={s.button}
+          >
+            Портфолио
+          </MainButtonLink>
           <MainButtonLink className={s.button}>Стек</MainButtonLink>
           <MainButtonLink className={s.button}>Предпочтения</MainButtonLink>
         </div>
