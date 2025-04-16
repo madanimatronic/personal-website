@@ -7,13 +7,29 @@
 }
 
 .title {
-  background: linear-gradient(to right, #da781d, #e79f38);
+  background: linear-gradient(
+    to right,
+    #e73838,
+    #da781d,
+    #dbe738,
+    #3ee738,
+    #38e7e7,
+    #3b38e7,
+    #be38e7,
+    #e738c1,
+    #e73838,
+    #da781d
+  );
+  background-size: 800% 100%;
   // Альтернативный вариант:
   // background: linear-gradient(to right, #da781d, #e79f38, #da781d);
   font-size: 1.5em;
   background-clip: text;
   color: transparent;
   filter: drop-shadow(0.1em 0.1em #862222);
+  animation:
+    10s linear 0s infinite forwards titleGradient,
+    3s ease-in-out 0s infinite forwards titleShake;
 }
 
 .screen {
@@ -24,12 +40,13 @@
     repeating-linear-gradient(
       to bottom,
       transparent 0%,
-      rgba(255, 255, 255, 0.05) 0.5%,
+      rgba(0, 0, 0, 0.4) 0.5%,
       transparent 1.5%
     );
   border-top: 4px solid #ffffff;
   border-bottom: 4px solid #ffffff;
   padding: 58px 0;
+  animation: 10s linear 0s infinite forwards screenGradient;
 }
 
 .link {
@@ -37,7 +54,60 @@
   background: none;
   border: none;
   cursor: pointer;
+  animation: 4s ease-in-out 0s infinite forwards phoneShake;
 }
 
 .image {
+  transition: filter 0.2s ease-in-out;
+  &:hover {
+    filter: brightness(2);
+  }
+}
+
+@keyframes titleGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes titleShake {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes screenGradient {
+  0% {
+    background-color: #ff0000;
+  }
+  33% {
+    background-color: #00ff0d;
+  }
+  66% {
+    background-color: #0004ff;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
+
+@keyframes phoneShake {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
 }
