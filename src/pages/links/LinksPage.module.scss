@@ -14,16 +14,12 @@
     justify-self: flex-end;
   }
 
-  // Чётные дочерние элементы
-  // & > :nth-child(even) {
-  //   justify-self: flex-start;
-  // }
-
   & > :nth-child(even) > .buttonLink {
     align-self: flex-start;
     box-shadow: 5px 5px #d10404;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       box-shadow: 5px 5px #830707;
     }
   }
