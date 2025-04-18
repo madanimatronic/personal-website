@@ -22,7 +22,7 @@ export default function AboutPage() {
           Меня зовут testName <br /> Я начинающий frontend-разработчик,
           стремящийся к новым знаниям и навыкам.
         </h1>
-        <MainContentBlock title='Опыт'>
+        <MainContentBlock title='Опыт' titleAnchorId='experience'>
           <div className={s.textContainer}>
             <p className={s.contentBlockText}>
               На данный момент у меня не так много опыта frontend-разработки, но
@@ -51,7 +51,7 @@ export default function AboutPage() {
             </p>
           </div>
         </MainContentBlock>
-        <MainContentBlock title='Стек'>
+        <MainContentBlock title='Стек' titleAnchorId='stack'>
           <ul className={s.stackList}>
             <li className={clsx(s.stackItem, s.html)}>HTML</li>
             <li className={clsx(s.stackItem, s.css)}>CSS</li>
@@ -83,7 +83,7 @@ export default function AboutPage() {
             новое
           </small>
         </MainContentBlock>
-        <MainContentBlock title='Предпочтения'>
+        <MainContentBlock title='Предпочтения' titleAnchorId='preferences'>
           <ol className={s.preferencesList}>
             <li className={clsx(s.preferenceItem, s.contentBlockText)}>
               <div className={s.preferenceContainer}>

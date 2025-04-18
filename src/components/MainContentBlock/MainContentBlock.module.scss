@@ -4,4 +4,26 @@
 .title {
   margin-bottom: 35px;
   font-size: 1.5em;
+  scroll-margin-top: 2em;
+}
+
+.anchorLink {
+  display: inline-block;
+  margin-left: 0.3em;
+  visibility: hidden;
+  line-height: 0;
+}
+
+.title:hover .anchorLink {
+  visibility: visible;
+}
+
+.linkImage {
+  width: 1.2em;
+  height: 1.2em;
+  filter: grayscale(1) brightness(3);
+}
+
+.anchorLink:hover .linkImage {
+  filter: brightness(1);
 }
