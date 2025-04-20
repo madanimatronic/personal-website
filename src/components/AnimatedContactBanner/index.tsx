@@ -22,6 +22,7 @@ export const AnimatedContactBanner: FC<AnimatedContactBannerProps> = ({
             alt='Винтажный телефон'
             width={162}
             height={556}
+            priority
           />
         </Link>
       </div>

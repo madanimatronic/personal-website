@@ -1,8 +1,14 @@
+@use '../../styles/mixins' as mixins;
+
 .main {
   display: flex;
   flex-direction: column;
-  row-gap: 180px;
-  padding: 133px 124px 240px;
+  row-gap: 7.5em;
+  padding: 5.625em clamp(2em, 10vw, 5.17em) 10em;
+
+  @include mixins.responsive('xxs') {
+    padding: 5.625em 1em 10em;
+  }
 }
 
 .intro {
@@ -66,8 +72,8 @@
 .stackList {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 40px;
-  row-gap: 30px;
+  column-gap: 1.67em;
+  row-gap: 1.25em;
 }
 
 .stackItem {
@@ -204,13 +210,13 @@
 }
 
 .stackNote {
-  margin-top: 40px;
+  margin-top: 2.22em;
 }
 
 .preferencesList {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 1.25em;
   list-style-position: inside;
   .preferenceItem::marker {
     content: counter(list-item) ') ';
@@ -218,15 +224,13 @@
 }
 
 .preferenceItem {
-  // Альтернативный вариант с подчёркиванием счётчика списка
-  // text-decoration: underline;
   white-space: preserve nowrap;
 }
 
 .preferenceContainer {
   display: inline-flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 0.625em;
   white-space: normal;
 }
 

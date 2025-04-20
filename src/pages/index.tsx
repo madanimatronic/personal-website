@@ -38,8 +38,12 @@ export default function HomePage() {
           >
             Портфолио
           </MainButtonLink>
-          <MainButtonLink className={s.button}>Стек</MainButtonLink>
-          <MainButtonLink className={s.button}>Предпочтения</MainButtonLink>
+          <MainButtonLink href='/about#stack' className={s.button}>
+            Стек
+          </MainButtonLink>
+          <MainButtonLink href='/about#preferences' className={s.button}>
+            Предпочтения
+          </MainButtonLink>
         </div>
         <AnimatedContactBanner />
       </MainLayout>

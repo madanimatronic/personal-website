@@ -5,12 +5,11 @@
   color: inherit;
   background-color: #000000;
   border: 2px solid #d10404;
-  box-shadow: -5px 5px #d10404;
+  box-shadow: -0.2083em 0.2083em #d10404;
   padding: 0.75em 1.167em;
   cursor: pointer;
   text-align: center;
   transition:
-    box-shadow 0.1s ease-in-out,
     background-color 0.1s ease-in-out,
     color 0.1s ease-in-out;
 
@@ -18,7 +17,7 @@
   &:focus-visible {
     background-color: #d10404;
     color: #000000;
-    box-shadow: -5px 5px #830707;
+    box-shadow: -0.2083em 0.2083em #830707;
   }
 
   &:focus-visible {

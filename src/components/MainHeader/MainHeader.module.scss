@@ -1,8 +1,29 @@
+@use '../../styles/mixins' as mixins;
+
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #d10404;
-  padding: 45px 75px;
+  padding: 1.875em 3.125em;
+  column-gap: 2em;
+
+  @include mixins.responsive('xl') {
+    padding: 1.875em 1.125em;
+  }
+
+  @include mixins.responsive('lg') {
+    column-gap: 1em;
+  }
+
+  @include mixins.responsive('md') {
+    padding: 0.875em 1.125em;
+  }
+
+  @include mixins.responsive('xs') {
+    flex-direction: column;
+    row-gap: 2em;
+  }
 }
 
 .title {
@@ -18,7 +39,21 @@
 .linksList {
   display: flex;
   align-items: center;
-  column-gap: 100px;
+  column-gap: 4.17em;
+
+  @include mixins.responsive('xl') {
+    column-gap: 2em;
+  }
+
+  @include mixins.responsive('md') {
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 2em;
+  }
+
+  @include mixins.responsive('xs') {
+    align-items: center;
+  }
 }
 
 .linkItem {

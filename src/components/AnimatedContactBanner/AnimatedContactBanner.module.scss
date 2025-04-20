@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 45px;
-  // row-gap: 1.875em;
+  row-gap: 1.875em;
 }
 
 .title {
@@ -21,11 +20,10 @@
     #da781d
   );
   background-size: 800% 100%;
-  // Альтернативный вариант:
-  // background: linear-gradient(to right, #da781d, #e79f38, #da781d);
   font-size: 1.5em;
   background-clip: text;
   color: transparent;
+  text-align: center;
   filter: drop-shadow(0.1em 0.1em #862222);
   animation:
     10s linear 0s infinite forwards titleGradient,
@@ -45,12 +43,12 @@
     );
   border-top: 4px solid #ffffff;
   border-bottom: 4px solid #ffffff;
-  padding: 58px 0;
+  padding: 2.417em 0;
   animation: 10s linear 0s infinite forwards screenGradient;
 }
 
 .link {
-  font-size: 0;
+  line-height: 0;
   background: none;
   border: none;
   cursor: pointer;
@@ -62,6 +60,8 @@
 }
 
 .image {
+  width: 6.75em;
+  height: auto;
   transition: filter 0.2s ease-in-out;
   &:hover {
     filter: brightness(2);

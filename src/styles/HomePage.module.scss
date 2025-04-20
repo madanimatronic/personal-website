@@ -1,13 +1,30 @@
+@use '../styles/mixins' as mixins;
+
 .main {
-  padding-bottom: 240px;
+  padding-bottom: 10em;
 }
 
 .buttonsContainer {
   display: flex;
-  column-gap: 300px;
+  column-gap: clamp(5em, 12.6vw, 12.5em);
   justify-content: center;
-  margin: 550px 0;
+  margin: clamp(4em, 34vw, 22.92em) 0;
   align-items: center;
+  row-gap: 2em;
+  padding: 0 2em;
+
+  @include mixins.responsive('lg') {
+    column-gap: 1em;
+    padding: 0 1em;
+  }
+
+  @include mixins.responsive('md') {
+    flex-direction: column;
+  }
+
+  @include mixins.responsive('sm') {
+    margin: clamp(4em, 20vw, 22.92em) 0;
+  }
 
   .button {
     width: 15em;

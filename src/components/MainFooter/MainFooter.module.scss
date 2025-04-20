@@ -1,13 +1,24 @@
+@use '../../styles/mixins' as mixins;
+
 .footer {
   display: flex;
   justify-content: center;
-  padding: 40px 0;
+  padding: 1.67em 1em;
 }
 
 .linksList {
   display: flex;
   align-items: center;
-  column-gap: 100px;
+  column-gap: 4.17em;
+  row-gap: 2em;
+
+  @include mixins.responsive('sm') {
+    column-gap: 2em;
+  }
+
+  @include mixins.responsive('xs') {
+    flex-direction: column;
+  }
 }
 
 .linkItem {

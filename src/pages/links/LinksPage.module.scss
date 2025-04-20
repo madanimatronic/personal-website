@@ -1,6 +1,12 @@
+@use '../../styles/mixins' as mixins;
+
 .main {
   margin-top: auto;
-  padding: 0 130px;
+  padding: 2em;
+
+  @include mixins.responsive('xxs') {
+    padding: 1em;
+  }
 }
 
 .linksList {
@@ -16,11 +22,31 @@
 
   & > :nth-child(even) > .buttonLink {
     align-self: flex-start;
-    box-shadow: 5px 5px #d10404;
+    box-shadow: 0.2083em 0.2083em #d10404;
 
     &:hover,
     &:focus-visible {
-      box-shadow: 5px 5px #830707;
+      box-shadow: 0.2083em 0.2083em #830707;
+    }
+  }
+
+  @include mixins.responsive('lg') {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > :nth-child(odd) {
+      justify-self: unset;
+    }
+
+    & > :nth-child(even) > .buttonLink {
+      align-self: unset;
+      box-shadow: -0.2083em 0.2083em #d10404;
+
+      &:hover,
+      &:focus-visible {
+        box-shadow: -0.2083em 0.2083em #830707;
+      }
     }
   }
 }
@@ -29,7 +55,15 @@
 }
 
 .buttonLink {
-  font-size: 1.5em;
+  font-size: clamp(1em, 2vw, 1.5em);
   padding: 1.25em 0;
   width: 21.1em;
+
+  @include mixins.responsive('xl_2') {
+    font-size: 1em;
+  }
+
+  @include mixins.responsive('lg') {
+    font-size: clamp(0.84em, 3.6vw, 1.5em);
+  }
 }

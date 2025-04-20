@@ -1,9 +1,17 @@
+@use '../../styles/mixins' as mixins;
+
 .main {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap-reverse;
   margin-top: auto;
   column-gap: 6em;
-  padding: 0 130px;
+  row-gap: 2em;
+  padding: 2em;
+
+  @include mixins.responsive('xxs') {
+    padding: 1em 0.5em;
+  }
 }
 
 .linksList {
@@ -17,12 +25,21 @@
 }
 
 .buttonLink {
-  font-size: 1.5em;
+  font-size: clamp(1em, 2vw, 1.5em);
   padding: 1.25em 0;
   width: 21.1em;
+
+  @include mixins.responsive('xl_2') {
+    font-size: 1em;
+  }
+
+  @include mixins.responsive('lg') {
+    font-size: clamp(0.84em, 3.6vw, 1.5em);
+  }
 }
 
 .mailContainer {
+  font-size: clamp(0.5em, 2vw, 1em);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +49,14 @@
   border: 2px solid;
   text-align: center;
   font-style: normal;
+
+  @include mixins.responsive('xl_2') {
+    font-size: 1em;
+  }
+
+  @include mixins.responsive('lg') {
+    font-size: clamp(0.84em, 3.6vw, 1em);
+  }
 }
 
 .mailTitle {
