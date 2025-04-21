@@ -4,7 +4,7 @@ import { MainButtonLink } from '@/components/MainButtonLink';
 import { Seo } from '@/components/Seo';
 import { TerminalHero } from '@/components/TerminalHero';
 import s from '@/styles/HomePage.module.scss';
-import { myGithubURL } from '@/utils/constants';
+import { devTitle, myGithubURL } from '@/utils/constants';
 
 // TODO: при встраивании knucklebones не забыть поменять favicon,
 // description и title в Seo (также проверить всё это и на других страницах)
@@ -22,7 +22,7 @@ export default function HomePage() {
   return (
     <>
       <Seo
-        headTitle='Home page'
+        headTitle={devTitle}
         metaDescription='some description'
         iconLink='/favicon.ico'
       />

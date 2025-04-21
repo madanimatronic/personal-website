@@ -2,7 +2,7 @@ import { MainLayout } from '@/components/Layouts/MainLayout';
 import { MainButtonLink } from '@/components/MainButtonLink';
 import { MainContentBlock } from '@/components/MainContentBlock';
 import { Seo } from '@/components/Seo';
-import { procharityURL } from '@/utils/constants';
+import { devTitle, procharityURL } from '@/utils/constants';
 import clsx from 'clsx';
 import s from './AboutPage.module.scss';
 
@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <>
       <Seo
-        headTitle='About page'
+        headTitle={`Обо мне | ${devTitle}`}
         metaDescription='some description'
         iconLink='/favicon.ico'
       />

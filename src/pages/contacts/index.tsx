@@ -1,14 +1,14 @@
 import { MainLayout } from '@/components/Layouts/MainLayout';
 import { MainButtonLink } from '@/components/MainButtonLink';
 import { Seo } from '@/components/Seo';
-import { myWorkMail } from '@/utils/constants';
+import { devTitle, myWorkMail } from '@/utils/constants';
 import s from './ContactsPage.module.scss';
 
 export default function ContactsPage() {
   return (
     <>
       <Seo
-        headTitle='Contacts page'
+        headTitle={`Контакты | ${devTitle}`}
         metaDescription='some description'
         iconLink='/favicon.ico'
       />

@@ -4,6 +4,7 @@ import { Seo } from '@/components/Seo';
 import { Game } from '@/game/entities/Game';
 import { IPlayer, Player } from '@/game/entities/Player';
 import { reverseField } from '@/game/utils/utils';
+import { devTitle } from '@/utils/constants';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { useCallback, useEffect, useMemo, useState } from 'react';
@@ -125,7 +126,7 @@ export default function KnucklebonesPage() {
   return (
     <>
       <Seo
-        headTitle='My page'
+        headTitle={`Knucklebones | ${devTitle}`}
         metaDescription='some description'
         iconLink='/favicon.ico'
       />
