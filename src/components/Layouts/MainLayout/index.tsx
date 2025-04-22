@@ -20,7 +20,7 @@ export const MainLayout: FC<MainLayoutProps> = ({
   return (
     <>
       <div className={clsx(s.page, pageClassName)}>
-        <MainHeader title='testName' />
+        <MainHeader title='Shustenkov' />
         <main className={mainElementClassName}>{children}</main>
         <MainFooter className={s.footer} />
       </div>

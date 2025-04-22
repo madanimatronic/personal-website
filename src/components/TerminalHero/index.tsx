@@ -6,13 +6,6 @@ interface TerminalHeroProps {
   className?: string;
 }
 
-// TODO: развить эту задумку:
-// Надпись 'I DO FRONTEND' выводится анимированно в стиле терминала
-// 'FRONTEND' можно выделить, сделать акцент на этом слове
-// 1) сделать тень от текста
-// 2) залить контейнер слова акцентным цветом, а цвет слова сделать фоновым (чёрным)
-// Выделение слова тоже можно анимировать для красоты
-
 export const TerminalHero: FC<TerminalHeroProps> = ({
   className: additionalClassName,
 }) => {

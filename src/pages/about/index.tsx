@@ -6,20 +6,19 @@ import { devTitle, procharityURL } from '@/utils/constants';
 import clsx from 'clsx';
 import s from './AboutPage.module.scss';
 
-// TODO: секции (упорядоченный список) стек, требования к работе (лучше написать пожелания или предпочтения), "хотите связаться?", обо мне
-
 export default function AboutPage() {
   return (
     <>
       <Seo
         headTitle={`Обо мне | ${devTitle}`}
-        metaDescription='some description'
+        metaDescription='Меня зовут Илья. Я начинающий frontend-разработчик, стремящийся
+          к новым знаниям и навыкам'
       />
       <MainLayout mainElementClassName={s.main}>
         <h1 className={s.intro}>
           <span className={s.greeting}>Привет!</span> <br />
-          Меня зовут testName <br /> Я начинающий frontend-разработчик,
-          стремящийся к новым знаниям и навыкам.
+          Меня зовут Илья. <br /> Я начинающий frontend-разработчик, стремящийся
+          к новым знаниям и навыкам.
         </h1>
         <MainContentBlock title='Опыт' titleAnchorId='experience'>
           <div className={s.textContainer}>

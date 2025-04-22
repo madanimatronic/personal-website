@@ -1,14 +1,4 @@
-Basic Next.js, TS, React (and more) boilerplate for Frontend.
+# Сайт-визитка
 
-## Commands
-
-```bash
-  dev
-  build
-  start
-  lint
-  format
-  format:fix
-```
-
-\*Don't forget to rename .env.example
+На сайте представлена вся важная информация для работодателя.<br />
+Также на сайте есть интерактивные элементы и игра knucklebones.

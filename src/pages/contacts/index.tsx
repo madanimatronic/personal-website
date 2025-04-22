@@ -9,7 +9,7 @@ export default function ContactsPage() {
     <>
       <Seo
         headTitle={`Контакты | ${devTitle}`}
-        metaDescription='some description'
+        metaDescription='Контакты для связи'
       />
       <MainLayout mainElementClassName={s.main}>
         <ul className={s.linksList}>

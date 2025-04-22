@@ -17,7 +17,7 @@ export default function Document() {
           sizes='180x180'
           href='/favicons/apple-touch-icon.png'
         />
-        <meta name='apple-mobile-web-app-title' content='Shustenkov DEV' />
+        <meta name='apple-mobile-web-app-title' content='Shustenkov Dev' />
         <link rel='manifest' href='/site.webmanifest' />
       </Head>
       <body>

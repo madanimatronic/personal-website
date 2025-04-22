@@ -9,7 +9,7 @@ export default function LinksPage() {
     <>
       <Seo
         headTitle={`Ссылки | ${devTitle}`}
-        metaDescription='some description'
+        metaDescription='Полезные ссылки'
       />
       <MainLayout mainElementClassName={s.main}>
         <ul className={s.linksList}>
