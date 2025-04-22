@@ -128,7 +128,6 @@ export default function KnucklebonesPage() {
       <Seo
         headTitle={`Knucklebones | ${devTitle}`}
         metaDescription='some description'
-        iconLink='/favicon.ico'
       />
       {/* Скрывать страницу на время загрузки помогает избежать вспышки
       Ещё благодаря стилям в globals когда страница спрятана, фон body (и html) будет

@@ -21,11 +21,7 @@ import { devTitle, myGithubURL } from '@/utils/constants';
 export default function HomePage() {
   return (
     <>
-      <Seo
-        headTitle={devTitle}
-        metaDescription='some description'
-        iconLink='/favicon.ico'
-      />
+      <Seo headTitle={devTitle} metaDescription='some description' />
       <MainLayout mainElementClassName={s.main}>
         <TerminalHero />
         <div className={s.buttonsContainer}>

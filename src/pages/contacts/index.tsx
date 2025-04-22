@@ -10,7 +10,6 @@ export default function ContactsPage() {
       <Seo
         headTitle={`Контакты | ${devTitle}`}
         metaDescription='some description'
-        iconLink='/favicon.ico'
       />
       <MainLayout mainElementClassName={s.main}>
         <ul className={s.linksList}>

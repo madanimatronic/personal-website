@@ -14,7 +14,6 @@ export default function AboutPage() {
       <Seo
         headTitle={`Обо мне | ${devTitle}`}
         metaDescription='some description'
-        iconLink='/favicon.ico'
       />
       <MainLayout mainElementClassName={s.main}>
         <h1 className={s.intro}>

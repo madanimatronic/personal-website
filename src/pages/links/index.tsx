@@ -10,7 +10,6 @@ export default function LinksPage() {
       <Seo
         headTitle={`Ссылки | ${devTitle}`}
         metaDescription='some description'
-        iconLink='/favicon.ico'
       />
       <MainLayout mainElementClassName={s.main}>
         <ul className={s.linksList}>
