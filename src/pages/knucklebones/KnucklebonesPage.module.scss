@@ -35,6 +35,10 @@
     padding: 10px;
     font-size: 24px;
   }
+
+  @include mixins.responsive('xs') {
+    padding: 6px;
+  }
 }
 
 .dark {
@@ -53,26 +57,30 @@
   width: 100%;
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: 1fr 160px 1fr;
+  grid-template-rows: auto 1fr 160px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
   column-gap: var(--grid-column-gap);
 
   @include mixins.responsive('md') {
-    grid-template-rows: 1fr 140px 1fr;
+    grid-template-rows: auto 1fr 140px 1fr;
   }
 
   @include mixins.responsive('sm') {
-    grid-template-rows: 1fr 130px 1fr;
+    grid-template-rows: auto 1fr 130px 1fr;
+  }
+
+  @include mixins.responsive('xs') {
+    --base-padding: 6px;
   }
 
   @include mixins.responsive('lg-height') {
-    grid-template-rows: 1fr 130px 1fr;
+    grid-template-rows: auto 1fr 130px 1fr;
   }
 
   @include mixins.responsive('md-height') {
-    grid-template-rows: 1fr 120px 1fr;
+    grid-template-rows: auto 1fr 120px 1fr;
   }
 
   // К сожалению, такое странное решение обусловлено большой сложностью динамической замены
@@ -108,15 +116,11 @@
 }
 
 .playerWidgets {
-  grid-row: 3;
-
-  @include mixins.responsive('sm') {
-    grid-column: 3;
-  }
+  grid-row: 4;
 }
 
 .playerField {
-  grid-row: 3;
+  grid-row: 4;
   grid-column: 2;
 }
 
@@ -125,7 +129,7 @@
   flex-direction: column;
   row-gap: 5px;
   align-items: center;
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 2;
   // Второй вариант - растянуть этот блок:
   // grid-column: 1 / 4;
@@ -171,7 +175,7 @@
 }
 
 .botField {
-  grid-row: 1;
+  grid-row: 2;
   grid-column: 2;
 
   // Здесь те же трудности работы с пунктирной рамкой
@@ -188,8 +192,12 @@
 }
 
 .botWidgets {
-  grid-row: 1;
+  grid-row: 2;
   grid-column: 3;
+
+  @include mixins.responsive('sm') {
+    grid-column: 1;
+  }
 
   // Стандартный цвет описан в самом компоненте,
   // а здесь задаётся нужный цвет для цветовой темы страницы

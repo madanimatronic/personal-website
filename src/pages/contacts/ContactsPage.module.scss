@@ -3,11 +3,14 @@
 .main {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap-reverse;
   margin-top: auto;
   column-gap: 6em;
   row-gap: 2em;
   padding: 2em;
+
+  @include mixins.responsive('lg') {
+    flex-wrap: wrap-reverse;
+  }
 
   @include mixins.responsive('xxs') {
     padding: 1em 0.5em;
@@ -55,7 +58,7 @@
   }
 
   @include mixins.responsive('lg') {
-    font-size: clamp(0.84em, 3.6vw, 1em);
+    font-size: clamp(0.66em, 3.6vw, 1em);
   }
 }
 
