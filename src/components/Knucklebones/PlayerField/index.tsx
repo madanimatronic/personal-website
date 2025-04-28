@@ -88,6 +88,7 @@ export const PlayerField: FC<PlayerFieldProps> = ({
                 ? availableColumns.includes(colIndex) && s.interactive
                 : s.interactive),
           )}
+          role='button'
         >
           {column.map((value, squareIndex) =>
             value !== null ? (
