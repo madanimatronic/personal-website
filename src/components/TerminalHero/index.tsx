@@ -14,7 +14,7 @@ export const TerminalHero: FC<TerminalHeroProps> = ({
       <h1 className={s.message}>
         <span className={clsx(s.animatedMessage, s.typewriterEffect)}>
           {'I DO '}
-          <span className={s.accent}>FRONTEND</span>
+          <span className={s.accent}>BACKEND</span>
         </span>
       </h1>
     </div>

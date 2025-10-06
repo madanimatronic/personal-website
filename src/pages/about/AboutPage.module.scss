@@ -50,6 +50,13 @@
   }
 }
 
+.githubLink {
+  transition: color 0.05s linear;
+  &:hover {
+    color: #d10404;
+  }
+}
+
 .nodeAccent {
   color: #6ebc4d;
 }
@@ -202,6 +209,46 @@
     color: #26e99c;
     background-color: rgba(38, 233, 155, 0.1);
   }
+
+  &.nest {
+    color: #ea2857;
+    background-color: rgba(234, 40, 89, 0.1);
+  }
+
+  &.mongo {
+    color: #01ed64;
+    background-color: rgba(1, 237, 99, 0.1);
+  }
+
+  &.mongoose {
+    color: #880000;
+    background-color: rgba(136, 0, 0, 0.1);
+  }
+
+  &.sequelize {
+    color: #3b76c3;
+    background-color: rgba(59, 118, 195, 0.1);
+  }
+
+  &.zod {
+    color: #44a4ff;
+    background-color: rgba(68, 165, 255, 0.1);
+  }
+
+  &.passport {
+    color: #35df79;
+    background-color: rgba(53, 223, 121, 0.1);
+  }
+
+  &.supertest {
+    color: #cb3837;
+    background-color: rgba(203, 55, 55, 0.1);
+  }
+
+  &.docker {
+    color: #1d63ed;
+    background-color: rgba(29, 98, 237, 0.1);
+  }
 }
 
 .noteText {
@@ -236,4 +283,24 @@
 
 .preferenceText {
   text-decoration: underline;
+}
+
+.deprecatedSubtitle {
+  font-size: 1em;
+  padding: 0.5em 0;
+  margin: 2.5em 0 0em 0;
+  display: inline-block;
+  color: #5c0303;
+  // background-color: #35020269;
+}
+
+.deprecatedStack {
+  font-size: 0.7em;
+  background-color: #35020249;
+
+  padding: 1em;
+
+  & > * {
+    filter: brightness(0.5);
+  }
 }

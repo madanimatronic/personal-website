@@ -11,7 +11,7 @@ export default function HomePage() {
     <>
       <Seo
         headTitle={devTitle}
-        metaDescription='Меня зовут Илья. Я начинающий frontend-разработчик,
+        metaDescription='Меня зовут Илья. Я начинающий backend node.js разработчик,
           стремящийся к новым знаниям и навыкам'
       />
       <MainLayout mainElementClassName={s.main}>
